@@ -1,3 +1,10 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Karla|Roboto&display=swap");
+
 html {
   font-size: 16px;
   -ms-text-size-adjust: 100%;
@@ -5,6 +12,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -609,3 +617,5 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+`;
