@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
+import bgImage from '~/assets/images/index/bg_pc.jpg';
+
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
-  background-image: url(bgImage);
+  background-image: url(${bgImage});
   background-position: 200px;
   background-repeat: no-repeat;
   background-size: cover;
