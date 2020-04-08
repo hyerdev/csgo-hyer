@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '~/components/Layout';
 
-const BindsCFGPage = () => {
+function BindsCFGPage() {
   return (
     <Layout>
       <div>
@@ -9,6 +9,6 @@ const BindsCFGPage = () => {
       </div>
     </Layout>
   );
-};
+}
 
 export default BindsCFGPage;
