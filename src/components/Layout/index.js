@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './styles';
+import { Wrapper, Main } from './styles';
+import Header from '~/components/Header';
 
 const Layout = ({ children }) => {
   return (
     <Wrapper>
-      <main>{children}</main>
+      <Header />
+      <Main>{children}</Main>
     </Wrapper>
   );
 };

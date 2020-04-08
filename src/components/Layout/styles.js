@@ -8,3 +8,5 @@ export const Wrapper = styled.div`
 
   font-size: 16px;
 `;
+
+export const Main = styled.main``;
