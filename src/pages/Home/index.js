@@ -4,7 +4,7 @@ import Layout from '~/components/Layout';
 
 import { Container, Wrapper } from './styles';
 
-const IndexPage = () => {
+function IndexPage() {
   return (
     <Layout>
       <Container>
@@ -14,6 +14,6 @@ const IndexPage = () => {
       </Container>
     </Layout>
   );
-};
+}
 
 export default IndexPage;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '~/components/Layout';
 
-const BindsPage = () => {
+function BindsPage() {
   return (
     <Layout>
       <div>
@@ -9,6 +9,6 @@ const BindsPage = () => {
       </div>
     </Layout>
   );
-};
+}
 
 export default BindsPage;
