@@ -30,14 +30,14 @@ export const Wrapper = styled.div`
     text-transform: uppercase;
     font-weight: bold;
 
-    li + li {
-      margin-left: 20px;
-    }
-
     li {
       &:hover {
         color: #c83232;
         cursor: pointer;
+      }
+
+      & + li {
+        margin-left: 20px;
       }
     }
   }

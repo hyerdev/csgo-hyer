@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container, Wrapper } from './styles';
 import logo from '~/assets/images/logo.svg';
+import { Container, Wrapper } from './styles';
 
 export default function Header() {
   return (
