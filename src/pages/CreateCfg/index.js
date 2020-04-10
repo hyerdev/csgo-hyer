@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import Keyboard from 'react-simple-keyboard';
 
@@ -152,6 +153,17 @@ function CreateCfg() {
           </KeyboardContainer>
         </Wrapper>
       </Container>
+=======
+import React from 'react';
+import Layout from '~/components/Layout';
+
+function CreateCfg() {
+  return (
+    <Layout>
+      <div>
+        <h1>CreateCfg</h1>
+      </div>
+>>>>>>> development
     </Layout>
   );
 }
