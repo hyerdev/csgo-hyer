@@ -11,14 +11,12 @@ export default function Header() {
     <Container>
       <Wrapper>
         <img src={logo} alt="CSGOHyer" />
-
         <ul className="desktop-menu">
           <li>Gerador de CFG</li>
           <li>CFG de Pros</li>
           <li>Otimização do jogo</li>
           <li>Dicas</li>
         </ul>
-
         <div className="mobile">
           <button
             type="button"
