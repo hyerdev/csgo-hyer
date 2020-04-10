@@ -5,6 +5,7 @@ import bgImage from '~/assets/images/index/bg_pc.jpg';
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  padding-top: 150px;
 
   background-image: url(${bgImage});
   background-position: 200px;
@@ -20,8 +21,6 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-<<<<<<< Updated upstream
-=======
 
   h1 {
     font-size: 60px;
@@ -63,5 +62,5 @@ export const Wrapper = styled.div`
     padding-right: 20px;
     padding-left: 20px;
   }
->>>>>>> Stashed changes
+
 `;

@@ -117,6 +117,10 @@ export const Wrapper = styled.div`
         color: #c83232;
         cursor: pointer;
       }
+
+      & + li {
+        margin-left: 20px;
+      }
     }
   }
 
