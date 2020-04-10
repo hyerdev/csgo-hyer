@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-simple-keyboard/build/css/index.css';
+
 export default createGlobalStyle`
 
 /* Fonts */
