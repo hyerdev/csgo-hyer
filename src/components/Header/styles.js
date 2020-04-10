@@ -32,7 +32,62 @@ export const Wrapper = styled.div`
     padding: 0px;
   }
 
-  .menu-mobile {
+  ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    li + li {
+      margin-left: 20px;
+    }
+
+    li {
+      &:hover {
+        color: #c83232;
+        cursor: pointer;
+      }
+
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+`;
+
+export const MenuDesktop = styled.div`
+  @media (max-width: 900px) {
+    display: none;
+  }
+`;
+
+export const MenuMobile = styled.div`
+  display: none;
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
+
+  button {
+    display: flex;
+
+    svg {
+      margin: 0px;
+      margin-left: 15px;
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        color: #c83232;
+      }
+    }
+  }
+
+  div {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -42,10 +97,10 @@ export const Wrapper = styled.div`
     background-color: #000000;
     color: white;
     overflow-x: hidden;
-    opacity: 0;
     transition: opacity 0.5s linear 1s;
 
-    display: flex;
+    opacity: ${(props) => (props.open ? '1' : '0')};
+    display: ${(props) => (props.open ? 'flex' : 'none')};
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
@@ -78,65 +133,6 @@ export const Wrapper = styled.div`
       li + li {
         margin-top: 13px;
       }
-    }
-  }
-
-  .menu-mobile-button__open,
-  .menu-mobile-button__close {
-    display: flex;
-
-    svg {
-      margin: 0px;
-      margin-left: 15px;
-      color: #ffffff;
-      &:hover {
-        cursor: pointer;
-        color: #c83232;
-      }
-    }
-  }
-
-  .mobile,
-  .menu-mobile,
-  .menu-mobile-button__open {
-    display: none;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    li + li {
-      margin-left: 20px;
-    }
-
-    li {
-      &:hover {
-        color: #c83232;
-        cursor: pointer;
-      }
-
-      & + li {
-        margin-left: 20px;
-      }
-    }
-  }
-
-  @media (max-width: 1250px) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  @media (max-width: 900px) {
-    .desktop-menu {
-      display: none;
-    }
-    .mobile,
-    .menu-mobile,
-    .menu-mobile-button__open {
-      display: flex;
     }
   }
 `;
