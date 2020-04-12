@@ -62,5 +62,4 @@ export const Wrapper = styled.div`
     padding-right: 20px;
     padding-left: 20px;
   }
-
 `;

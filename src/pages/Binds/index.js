@@ -25,9 +25,7 @@ function BindsPage() {
             <p>Aqui está a sua .cfg:</p>
 
             <BindsPanel>
-              <textarea name="binds" rows="20" cols="50">
-                bind x "buy m4a4;"
-              </textarea>
+              <textarea name="binds">bind x "buy m4a4;"</textarea>
             </BindsPanel>
           </CFGPreview>
           <Tutorial>
