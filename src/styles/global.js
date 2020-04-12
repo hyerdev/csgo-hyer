@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-simple-keyboard/build/css/index.css';
+
 export default createGlobalStyle`
 
 /* Fonts */
@@ -196,7 +198,7 @@ textarea {
 }
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 * {
