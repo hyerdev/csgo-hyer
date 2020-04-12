@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import Keyboard from 'react-simple-keyboard';
 
@@ -7,6 +6,8 @@ import Layout from '~/components/Layout';
 import {
   Container,
   Wrapper,
+  Content,
+  MobileWarning,
   KeyboardContainer,
   ControlArrowsContainer,
   Numpad,
@@ -14,10 +15,8 @@ import {
 
 function CreateCfg() {
   const [input, setInput] = useState('');
-  const [layoutName, setLayoutName] = useState('default');
 
   const handleKeyPress = (key) => {
-    console.log(key);
     setInput(key);
   };
 
@@ -119,13 +118,19 @@ function CreateCfg() {
     <Layout>
       <Container>
         <Wrapper>
-          <h1>Selecione a tecla</h1>
-          <p>Depois, escolha a arma da vez</p>
+          <MobileWarning>
+            Acesse a versão desktop para as demais teclas
+          </MobileWarning>
+
+          <Content>
+            <h1>Selecione a tecla</h1>
+            <p>Depois, escolha a arma da vez</p>
+          </Content>
 
           <KeyboardContainer className="keyboardContainer">
             <Keyboard
               baseClass="simple-keyboard-main"
-              layoutName={layoutName}
+              layoutName="default"
               {...keyboardOptions}
             />
 
@@ -153,17 +158,6 @@ function CreateCfg() {
           </KeyboardContainer>
         </Wrapper>
       </Container>
-=======
-import React from 'react';
-import Layout from '~/components/Layout';
-
-function CreateCfg() {
-  return (
-    <Layout>
-      <div>
-        <h1>CreateCfg</h1>
-      </div>
->>>>>>> development
     </Layout>
   );
 }

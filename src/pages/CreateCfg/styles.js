@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
+import { Alert } from '@material-ui/lab';
 
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  padding-top: 150px;
   display: flex;
   justify-content: center;
 
@@ -17,21 +19,55 @@ export const Wrapper = styled.div`
   h1 {
     font-size: 60px;
     margin-bottom: 0;
+
+    @media (max-width: 1080px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 460px) {
+      font-size: 36px;
+    }
   }
 
   p {
     font-size: 32px;
     letter-spacing: 1px;
     opacity: 0.9;
+
+    @media (max-width: 1080px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 460px) {
+      font-size: 19px;
+    }
   }
+
+  @media (max-width: 1250px) {
+    padding: 0px 20px;
+  }
+`;
+
+export const MobileWarning = styled(Alert).attrs({
+  severity: 'warning',
+})`
+  margin-bottom: 20px;
+  display: none !important;
+
+  @media (max-width: 1080px) {
+    display: flex !important;
+  }
+`;
+
+export const Content = styled.div`
+  margin-bottom: 20px;
 `;
 
 export const KeyboardContainer = styled.div`
   display: flex;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
-  width: 1024px;
-  margin: 0 auto;
+  width: fit-content;
   border-radius: 5px;
   color: #333;
 
@@ -83,6 +119,10 @@ export const KeyboardContainer = styled.div`
       .hg-row:first-child {
         margin-bottom: 10px;
       }
+    }
+
+    @media (max-width: 1080px) {
+      display: none !important;
     }
   }
 
@@ -144,6 +184,10 @@ export const ControlArrowsContainer = styled.div`
       display: flex;
       align-items: center;
     }
+  }
+
+  @media (max-width: 1080px) {
+    display: none !important;
   }
 `;
 
