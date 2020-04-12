@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   right: 0;
   padding: ${(props) =>
     props.position === 'relative' ? '10px 0px 2px 0px' : '20px 0px'};
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +34,7 @@ export const Wrapper = styled.div`
     border: none;
     outline: none;
     padding: 0px;
+
   }
 
   ul {
