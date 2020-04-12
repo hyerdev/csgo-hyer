@@ -198,7 +198,7 @@ textarea {
 }
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 * {
