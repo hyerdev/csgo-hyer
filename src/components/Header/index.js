@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import { MdMenu, MdClose } from 'react-icons/md';
 import { Container, Wrapper, MenuDesktop, MenuMobile } from './styles';
 import logo from '~/assets/images/logo.svg';
 
-export default function Header() {
+function Header({ headerPosition }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Container>
-      <Wrapper>
+      <Wrapper headerPosition={headerPosition}>
         <Link to="/">
           <img src={logo} alt="CSGOHyer" />
         </Link>
@@ -43,3 +44,9 @@ export default function Header() {
     </Container>
   );
 }
+
+Header.propTypes = {
+  headerPosition: PropTypes.string.isRequired,
+};
+
+export default Header;

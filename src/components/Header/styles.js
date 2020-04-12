@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   z-index: 1;
-  position: fixed;
+  position: ${(props) => props.headerPosition};
   left: 0;
   right: 0;
   padding: 20px 0px;
