@@ -2,17 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  min-height: 100vh;
-  height: fit-content;
   padding-top: 150px;
   background-color: #273366;
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
+  min-height: 720px;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
 
   h1 {
