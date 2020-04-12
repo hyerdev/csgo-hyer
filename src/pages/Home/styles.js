@@ -11,6 +11,10 @@ export const Container = styled.div`
   background-position: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 900px) {
+    background-position: 0px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -52,5 +56,10 @@ export const Wrapper = styled.div`
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  @media (max-width: 1250px) {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 `;

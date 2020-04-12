@@ -7,7 +7,7 @@ import { Container, Wrapper } from './styles';
 
 function IndexPage() {
   return (
-    <Layout>
+    <Layout headerPosition="fixed">
       <Container>
         <Wrapper>
           <h1>

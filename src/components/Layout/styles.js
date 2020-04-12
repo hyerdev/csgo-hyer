@@ -4,7 +4,9 @@ export const Wrapper = styled.div`
   width: 100%;
   background-color: #000000;
   color: white;
-  min-height: 100vh;
-
   font-size: 16px;
+  height: fit-content;
+`;
+export const Main = styled.main`
+  height: 100vh;
 `;
